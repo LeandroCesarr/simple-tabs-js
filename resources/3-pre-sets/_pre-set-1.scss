@@ -1,0 +1,15 @@
+.pre-set-1 {
+  display: flex;
+
+  .tab-list {
+    flex: 1;
+  }
+
+  .content-list {
+    flex: 4;
+  }
+
+  .tab {
+    display: block;
+  }
+}
