@@ -29,7 +29,8 @@ import SimpleTabs from 'path/to/simple-tabs-js'
 @include 'path/to/simple-tabs-js/dist/bundle';
 ```
 
- - Em uma projeto basico, baixe os arquivos e importe no final do documento:
+ - Em uma projeto basico, baixe os arquivos e importe no final do documento: <br />
+ [Download CSS](dist/bundle.css) [Download JS](dist/simpletabsjs.min.js)
 
  ```html
   <link rel="stylesheet" href="bundle.css">
