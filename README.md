@@ -30,7 +30,7 @@ import SimpleTabs from 'path/to/simple-tabs-js'
 ```
 
  - Em uma projeto basico, baixe os arquivos e importe no final do documento: <br />
- [Download CSS](dist/bundle.css) [Download JS](dist/simpletabsjs.min.js)
+ [Download CSS](https://github.com/LeandroCesarr/simple-tabs-js/dist/bundle.css) [Download JS](https://github.com/LeandroCesarr/simple-tabs-js/dist/simpletabsjs.min.js)
 
  ```html
   <link rel="stylesheet" href="bundle.css">
