@@ -1,6 +1,6 @@
 {
   "name": "simple-tabs-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A quick way to implement tabs in your web project !!!",
   "keywords": [
     "tabs",
@@ -9,7 +9,7 @@
     "vanilla"
   ],
   "main": "dist/index.min.js",
-  "repository": "https://github.com/LeandroCesarr/simpleTabsJS.git",
+  "repository": "https://github.com/LeandroCesarr/simple-tabs-js.git",
   "author": "Leandro C. Silva",
   "license": "MIT",
   "scripts": {
