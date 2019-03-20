@@ -21,7 +21,7 @@ Importe os arquivos necessarios.
 ```es6
 // importe simple-tabs-js no main.js ou como precisar
 
-import SimpleTabs from 'path/to/simple-tabs-js/dist/index.min.js'
+import SimpleTabs from 'path/to/simple-tabs-js'
 ```
 ```scss
 // importe simple-tabs-js no main.scss ou como precisar
