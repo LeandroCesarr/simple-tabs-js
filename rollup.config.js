@@ -24,6 +24,21 @@ export default [
     ]
   },
   {
+    input: 'resources/browser.js',
+    output: {
+      name: 'index',
+      file: 'dist/simpletabsjs.min.js',
+      format: 'umd'
+    },
+    plugins: [
+      resolve(),
+      commonjs(),
+      babel(babelConfig),
+      minify(minifyConfig),
+      uglify()
+    ]
+  },
+  {
     input: 'resources/style.js',
     output: {
       file: 'dist/bundle.js',
