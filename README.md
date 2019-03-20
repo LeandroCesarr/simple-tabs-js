@@ -77,7 +77,7 @@ const minhaTabFantastica = new SimplsTabs('[minha-tab-fantastica]', {
 
 - `customHeight` como o nome ja diz, é um valor customizavel de altura da estrutura, por padrão ele é vazio, precisando caso use, passar em String o valor e a medida, Exemplo: `customHeight: '100px'`.
 
-#### 4 - Personalição (Divirta-se !!!)
+#### 4 - Personalização (Divirta-se !!!)
 
 Você pode adicionar classes a vontade na estrutura, apenas tomando cuidado para nao sobrescrever regras essenciais para o funcionamento, mas para isso será meio dificil.
 
