@@ -16,7 +16,8 @@ $ npm install simple-tabs-js
 ```
 
 ### Importação
-Importe os arquivos necessarios.
+ -  ES6
+ Importe os arquivos necessarios.
 
 ```es6
 // importe simple-tabs-js no main.js ou como precisar
@@ -26,6 +27,13 @@ import SimpleTabs from 'path/to/simple-tabs-js'
 ```scss
 // importe simple-tabs-js no main.scss ou como precisar
 @include 'path/to/simple-tabs-js/dist/bundle';
+```
+
+ - Em uma projeto basico, baixe os arquivos e importe no final do documento:
+
+ ```html
+  <link rel="stylesheet" href="bundle.css">
+  <script src="simpletabsjs.min.js"></script>
 ```
 
 ### Uso
@@ -56,14 +64,14 @@ A unica coisa que o simple-tabs necessita é uma estrutura HTML (exemplificada a
 Em seu arquivo JS, inicialize o simple-tabs passando o atributo definido anteriormente.
 
 ```ES6
-const minhaTabFantastica = new SimplsTabs('[minha-tab-fantastica]') 
+const minhaTabFantastica = new SimpleTabs('[minha-tab-fantastica]') 
 ```
 #### 3 - Opções
 Você pode passar um Objeto de configurações para alterar o estilo e comportamento padrão.
 Abaixo verá a configuração padrão.
 
 ```ES6
-const minhaTabFantastica = new SimplsTabs('[minha-tab-fantastica]', {
+const minhaTabFantastica = new SimpleTabs('[minha-tab-fantastica]', {
   listStyle: default,
   minHeight: false,
   customHeight: '',
