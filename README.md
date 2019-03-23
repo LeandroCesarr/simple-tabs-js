@@ -73,12 +73,12 @@ Abaixo verá a configuração padrão.
 
 ```ES6
 const minhaTabFantastica = new SimpleTabs('[minha-tab-fantastica]', {
-  listStyle: default,
+  preSet: 'default',
   minHeight: false,
   customHeight: '',
 }) 
 ```
-- `listStyle` é o estilo pre-definido, estando abaixo a lista com as opções atualmente disponiveis:
+- `preSet` é o estilo pre-definido, estando abaixo a lista com as opções atualmente disponiveis:
    - `default` // Somente o CSS necesário para o funcionamento.
    - `1`        // Tabs Verticais.
    - `purple-rain` // Vertical com tema roxo
