@@ -81,6 +81,7 @@ const minhaTabFantastica = new SimpleTabs('[minha-tab-fantastica]', {
 - `listStyle` é o estilo pre-definido, estando abaixo a lista com as opções atualmente disponiveis:
    - `default` // Somente o CSS necesário para o funcionamento.
    - `1`        // Tabs Verticais.
+   - `purple-rain` // Vertical com tema roxo
    
 - `minHeight` é um "minHeight" colocado para nao interfeir ou "quebrar" seu projeto, sendo o tamanho da maior DIV dentro da estrutua, seu valor é Boleano.
 
