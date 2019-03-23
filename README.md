@@ -48,10 +48,10 @@ A unica coisa que o simple-tabs necessita é uma estrutura HTML (exemplificada a
 ```html
 <div minha-tab-fantastica> // aqui, esse atributo, podera ser da sua escolha, sendo usado posteriormente
   <ol tab-list>
-    <li tab tab-default><a href="#eenie"></a></li>
-    <li tab><a href="#meenie"></a></li>
-    <li tab><a href="#miney"></a></li>
-    <li tab><a href="#mo"></a></li>
+    <li tab tab-default><a href="#eenie">Eenie</a></li>
+    <li tab><a href="#meenie">Meenie</a></li>
+    <li tab><a href="#miney">Miney</a></li>
+    <li tab><a href="#mo">Mo</a></li>
   </ol>
   <div content-list>
     <div id="eenie">Eenie</div>
