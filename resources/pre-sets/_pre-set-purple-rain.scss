@@ -1,0 +1,71 @@
+.simple-tabs.pre-set-purple-rain {
+  background: $color-purple-gray;
+  padding: 10px 10px 20px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  .tab-list {
+    background: $color-white;
+    width: 100%;
+    display: table;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+
+  .tab {
+    display: table-cell;
+    position: relative;
+    padding: 10px;
+    z-index: 2;
+
+    a {
+      font-weight: bold;
+      // text-transform: uppercase;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+
+    &::before {
+      content: "";
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      position: absolute;
+      background: $color-electric-violet;
+      z-index: -1;
+      transform: scale(1, 0.05);
+      transform-origin: bottom;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover,
+    &.is-active {
+      a {
+        color: $color-white;
+      }
+
+      &::before {
+        transform: scale(1, 1);
+      }
+    }
+  }
+
+  .content-list {
+    padding: 0 10px;
+  }
+
+  .content {
+    transition: opacity 0.3s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+}
+

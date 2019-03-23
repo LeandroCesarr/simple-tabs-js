@@ -1,5 +1,7 @@
 const optionsDefault = {
   preSet: 'default',
+  minHeight: true,
+  customHeight: null,
 };
 
 export default class SimpleTabs {
@@ -8,7 +10,6 @@ export default class SimpleTabs {
     this.tabHolder = this.container.querySelector('[tab-list]');
     this.contentHolder = this.container.querySelector('[content-list]');
     this.listElements = [];
-    this.minHeight = 0;
     this.lastTab = { tab: null, content: null };
     this.options = Object.assign(optionsDefault, options);
     this.setup();
@@ -21,6 +22,7 @@ export default class SimpleTabs {
     this.setTabDefault();
     this.setMinHeight();
     this.setListeners();
+    this.addElementForStyle();
   }
 
   createListElements() {
@@ -59,13 +61,21 @@ export default class SimpleTabs {
   }
 
   setMinHeight() {
-    this.listElements.forEach((elm) => {
-      if (elm.content.clientHeight > this.minHeight) {
-        this.minHeight = elm.content.offsetHeight;
-      }
-    });
+    let minHeight = 0;
 
-    this.container.style.minHeight = `${this.minHeight}px`;
+    if(this.options.customHeight === null) {
+      if (this.options.minHeight) {
+        this.listElements.forEach((elm) => {
+          if (elm.content.offsetHeight > minHeight) {
+            minHeight = elm.content.offsetHeight;
+          }
+        });
+  
+        this.contentHolder.style.minHeight = `${minHeight}px`;
+      }
+    } else {
+      this.contentHolder.style.minHeight = this.options.customHeight;
+    }
   }
 
   setListeners() {
