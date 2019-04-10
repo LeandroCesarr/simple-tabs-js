@@ -83,3 +83,43 @@
   .simple-tabs.pre-set-purple-rain .content {
     transition: opacity 0.3s ease;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+.simple-tabs.pre-set-green-lantern {
+  display: flex;
+  padding: 10px;
+  font-family: 'Trebuchet MS';
+  background: #f1f2f6; }
+  .simple-tabs.pre-set-green-lantern .tab-list {
+    flex: 1;
+    margin-bottom: 0;
+    border-right: 4px solid #079992; }
+  .simple-tabs.pre-set-green-lantern .content-list {
+    flex: 4;
+    margin-left: 10px; }
+  .simple-tabs.pre-set-green-lantern .tab {
+    display: block;
+    padding: 10px;
+    position: relative;
+    overflow: hidden; }
+    .simple-tabs.pre-set-green-lantern .tab a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #606060; }
+    .simple-tabs.pre-set-green-lantern .tab::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #079992;
+      top: 50%;
+      right: -10px;
+      transform: translate(-10000%, -50%);
+      transition: all 0.5s cubic-bezier(1, 0, 0, 1); }
+    .simple-tabs.pre-set-green-lantern .tab:hover, .simple-tabs.pre-set-green-lantern .tab.is-active {
+      background: #fff; }
+      .simple-tabs.pre-set-green-lantern .tab:hover a, .simple-tabs.pre-set-green-lantern .tab.is-active a {
+        color: #079992; }
+      .simple-tabs.pre-set-green-lantern .tab:hover::after, .simple-tabs.pre-set-green-lantern .tab.is-active::after {
+        transform: translate(0, -50%); }

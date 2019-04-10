@@ -5,8 +5,26 @@ const optionsDefault = {
 };
 
 export default class SimpleTabs {
+  constructor(selector, options) {
+    this.selector = selector;
+    this.options = options;
+    this.childs = [];
+
+    this.start();
+  }
+
+  start() {
+    const elements = document.querySelectorAll(this.selector);
+
+    elements.forEach((elm) => {
+      this.childs.push(new Core(elm, this.options));
+    });
+  }
+}
+
+class Core {
   constructor(elm, options) {
-    this.container = document.querySelector(elm);
+    this.container = elm;
     this.tabHolder = this.container.querySelector('[tab-list]');
     this.contentHolder = this.container.querySelector('[content-list]');
     this.listElements = [];
@@ -22,7 +40,6 @@ export default class SimpleTabs {
     this.setTabDefault();
     this.setMinHeight();
     this.setListeners();
-    this.addElementForStyle();
   }
 
   createListElements() {
@@ -70,7 +87,7 @@ export default class SimpleTabs {
             minHeight = elm.content.offsetHeight;
           }
         });
-  
+
         this.contentHolder.style.minHeight = `${minHeight}px`;
       }
     } else {
@@ -95,4 +112,3 @@ export default class SimpleTabs {
     });
   }
 }
-

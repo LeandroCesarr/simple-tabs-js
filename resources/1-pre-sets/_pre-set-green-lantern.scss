@@ -1,0 +1,57 @@
+.simple-tabs.pre-set-green-lantern {
+  display: flex;
+  padding: 10px;
+  font-family: 'Trebuchet MS';
+  background: #f1f2f6;
+  
+  .tab-list {
+    flex: 1;
+    margin-bottom: 0;
+    border-right: 4px solid #079992;
+  }
+  
+  .content-list {
+    flex: 4;
+    margin-left: 10px;
+  }
+  
+  .tab {
+    display: block;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #606060;
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #079992;
+      top: 50%;
+      right: -10px;
+      transform: translate(-10000%, -50%);
+      transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    }
+    
+    &:hover,
+    &.is-active {
+      background: #fff;
+      
+      a {
+        color: #079992;
+      }
+      
+      &::after {
+        transform: translate(0, -50%);
+      }
+    }
+  }
+}
