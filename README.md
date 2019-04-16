@@ -1,5 +1,5 @@
 # simple-tabs-js
-<a><img src="https://img.shields.io/npm/l/simple-tabs-js.svg" alt="Licence"></a> <a><img src="https://img.shields.io/github/package-json/v/leandrocesarr/simple-tabs-js.svg" alt="Version"></a> <a><img src="https://img.shields.io/github/last-commit/LeandroCesarr/simple-tabs.js.svg" alt="Last commit"></a>
+<a><img src="https://img.shields.io/npm/l/simple-tabs-js.svg" alt="Licence"></a> <a><img src="https://img.shields.io/github/package-json/v/leandrocesarr/simple-tabs-js.svg" alt="Version"></a> <a><img src="https://img.shields.io/github/last-commit/LeandroCesarr/simple-tabs.js.svg" alt="Last commit"></a> <a><img alt="Downloads" src="https://img.shields.io/npm/dt/simple-tabs-js.svg"></a>
 
 Uma maneira rapida de implementar tabs em seu projeto web!!! <br />
 [Demo Page](https://github.com/LeandroCesarr/simple-tabs.js) (Em desenvolvimento)
