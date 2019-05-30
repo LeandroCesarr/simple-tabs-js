@@ -1,12 +1,14 @@
 .tab-list {
   list-style: none;
   margin-top: 0;
-  padding-left: 0; }
+  padding-left: 0;
+  overflow: hidden; }
 
 .content-list {
   position: relative;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .tab {
   display: inline-block;

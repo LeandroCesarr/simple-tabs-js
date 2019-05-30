@@ -2,6 +2,7 @@ const optionsDefault = {
   preSet: 'default',
   minHeight: true,
   customHeight: null,
+  callback: null,
 };
 
 export default class SimpleTabs {
@@ -108,6 +109,10 @@ class Core {
 
         this.lastTab.tab = obj.tab;
         this.lastTab.content = obj.content;
+
+        if (this.options.callback) {
+          this.options.callback({tab: obj.tab, content: obj.content, index: i,});
+        };
       });
     });
   }
