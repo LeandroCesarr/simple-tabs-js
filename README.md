@@ -76,6 +76,7 @@ const minhaTabFantastica = new SimpleTabs('[minha-tab-fantastica]', {
   preSet: 'default',
   minHeight: false,
   customHeight: '',
+  callback: dataTabs => { suaFunçãoAqui(dataTabs) },
 }) 
 ```
 - `preSet` é o estilo pre-definido, estando abaixo a lista com as opções atualmente disponiveis:
@@ -87,6 +88,8 @@ const minhaTabFantastica = new SimpleTabs('[minha-tab-fantastica]', {
 - `minHeight` é um "minHeight" colocado para nao interfeir ou "quebrar" seu projeto, sendo o tamanho da maior DIV dentro da estrutua, seu valor é Boleano.
 
 - `customHeight` como o nome ja diz, é um valor customizavel de altura da estrutura, por padrão ele é vazio, precisando caso use, passar em String o valor e a medida, Exemplo: `customHeight: '100px'`.
+
+- `callback` você pode passar uma função de callback no evento de click, a função recebe um objeto com dados do evento, como, a tab clicada, o content relacionada a tab clicada e o index delas.
 
 #### 4 - Personalização (Divirta-se !!!)
 
