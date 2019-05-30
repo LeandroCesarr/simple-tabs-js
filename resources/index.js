@@ -97,7 +97,7 @@ class Core {
   }
 
   setListeners() {
-    this.listElements.forEach((obj) => {
+    this.listElements.forEach((obj, i) => {
       obj.tab.addEventListener('click', (evt) => {
         evt.preventDefault();
 
